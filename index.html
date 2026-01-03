@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Token System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>Smart Token System</h1>
+    <p class="subtitle">Choose service & track your turn</p>
+
+    <!-- USER PANEL -->
+    <div class="card user">
+        <h2>User Panel</h2>
+
+        <select id="service">
+            <option value="B"> Billing</option>
+            <option value="E">Enquiry</option>
+            <option value="S"> Support</option>
+        </select>
+
+        <button onclick="takeToken()">Take Token</button>
+
+        <div class="token-box">
+            Your Token:
+            <span id="userToken">---</span>
+        </div>
+
+        <p class="wait">People ahead: <span id="waiting">0</span></p>
+    </div>
+
+    <!-- ADMIN PANEL -->
+    <div class="card admin">
+        <h2>Admin Panel</h2>
+        <button onclick="nextToken()">Next Token</button>
+        <div class="token-box">
+            Now Serving:
+            <span id="currentToken">---</span>
+        </div>
+    </div>
+
+    <!-- QUEUE -->
+    <div class="queue-section">
+        <h2>Live Queue</h2>
+        <div id="queueList" class="queue-list"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

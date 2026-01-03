@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.app {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.user {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.admin {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.token-box {
+    margin-top: 10px;
+    font-size: 18px;
+    background: rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.wait {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.queue-section {
+    margin-top: 20px;
+}
+
+.queue-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.queue-list span {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.B { background: #1abc9c; }
+.E { background: #3498db; }
+.S { background: #e74c3c; }
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+    h1 { font-size: 22px; }
+}
